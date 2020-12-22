@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'production',
   module: {
     rules: [
       {
@@ -6,7 +7,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            cacheDirectory: true,
+            cacheDirectory: false,
             presets: [
               ['@babel/preset-env', { corejs: 3, useBuiltIns: 'entry' }]
             ]
