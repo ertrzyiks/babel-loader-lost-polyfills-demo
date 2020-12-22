@@ -6,10 +6,14 @@
   "repository": "git@github.com:ertrzyiks/babel-loader-lost-polyfills-demo.git",
   "author": "ertrzyiks <mateusz.derks@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "BABEL_ENV=production webpack"
+  },
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.12.11",
     "babel-loader": "8.2.2",
+    "babel-preset-react-app": "^10.0.0",
     "core-js": "^3.8.1",
     "webpack": "^4.44.2"
   },
