@@ -14,9 +14,13 @@ yarn build
 ```
 
 
-3. See that the output `dist/main.js` does not include the polyfills (search for `flat:`)
-4. Remove `'react-app'` from the `webpack.config.js`
+3. See that the output `dist/main.js` does not include the polyfills
+ - NO POLYFILLS printed to the console
+ - or just search for `flat:` in that file
+4. Remove one of the presets from the `webpack.config.js`
 5. Compile again
+ - POLYFILLS ARE PRESENT printed to the console
+ - or just search for `flat:` in that file
 
 ```
 yarn build

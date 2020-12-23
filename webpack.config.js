@@ -9,8 +9,8 @@ module.exports = {
           options: {
             cacheDirectory: false,
             presets: [
-              ['@babel/preset-env', { corejs: 3, useBuiltIns: 'entry' }],
-              'react-app'
+              [require('@babel/preset-env').default, { corejs: 3, useBuiltIns: 'entry' }],
+              [require('babel-preset-react-app/node_modules/@babel/preset-env').default, { corejs: 3, useBuiltIns: 'entry' }],
             ]
           }
         }
